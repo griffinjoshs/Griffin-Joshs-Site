@@ -1,6 +1,6 @@
-/* .navbar navbar-expand-sm navbar-dark bg-primary {
-    background-color: transparent; */
-/* } */ 
+body {
+    background-color: #000000 !important;
+}
 
  /* Navbar Scroll */
  .bg-dark {
@@ -534,6 +534,7 @@ footer {
 }
 
 .footer-bottom-text {
+    padding-top: 20px;
     text-align: center;
     color:#19388b ;
     background-color: #000000;
