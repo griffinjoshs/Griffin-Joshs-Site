@@ -74,12 +74,6 @@
     box-shadow: 0 27px 37px 0 rgba(0,2,0,0.2);
 }
 
-#username {
-    padding: 5px;
-    font-weight: 600;
-    font-family: 'Courgette', cursive;    
-}
-
     /* Cool Buttons */
     .btn {
         box-sizing: border-box;
