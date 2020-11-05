@@ -34,6 +34,30 @@
     .bg-dark {
         background-color: transparent !important;
     }
+
+    /* Wave CSS */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .wave {
+        background-color: transparent;
+        position: relative;
+    }
+
+    .wave::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: url(assets/images/curve.png);
+    }
+
+    /* Wave CSS End */
 </style>
 
 <body>
@@ -49,13 +73,13 @@
             <ul class="navbar-nav mr-auto">
                 <!-- ======= Navbar Links ======= -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Users</a>
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Users</a>
+                    <a href="store.html" class="nav-link">Store</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Users</a>
+                    <a href="contact.html" class="nav-link">Contact Me</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Users</a>
@@ -96,7 +120,10 @@
                 </div>
             </div>
         </div>
+        <section class="wave"></section>
     </header>
+
+
     <!-- Page Content -->
 
 
@@ -106,7 +133,6 @@
     <section>
         <div class="container" id="iconBars">
             <div class="row mbr-justify-content-center">
-
                 <div class="col-lg-6 mbr-col-md-10">
                     <div class="wrap">
                         <div class="ico-wrap">
@@ -115,10 +141,13 @@
                         <div class="text-wrap vcenter">
                             <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Check Out
                                 <span>My Merchandise</span></h2>
-                            <p class="mbr-fonts-style text1 mbr-text display-6">Coming Soon! I will be dropping a whole
-                                clothing line, if u want to get notified before anyone, subscribe to my OG squad below!
+                            <p class="mbr-fonts-style text1 mbr-text display-6">Coming Soon! I will be dropping a
+                                whole
+                                clothing line, if u want to get notified before anyone, subscribe to my OG squad
+                                below!
                             </p>
                         </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 mbr-col-md-10">
@@ -126,7 +155,7 @@
                         <div class="ico-wrap">
                             <ion-icon name="rocket" id="boxicons"></ion-icon>
                         </div>
-                        <div class="text-wrap vcenter">
+                        <div class="text-wrap vcenter" a href>
                             <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Learn how to Grow
                                 Followers on TikTok</h2>
                             <p class="mbr-fonts-style text1 mbr-text display-6">Want to get famous on social media? I
@@ -216,20 +245,24 @@
                     </div>
 
                     <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-                        <h2 id="Hfooter">The Super Duper OG Squad</h2>
-                        <p id="footerP">Wanna Be Updated Everytime I drop merch, run a discount, or put out a
-                            podcast?
-                            Subscribe here!</p>
-                        <form action="mailto:griffinjoshs99@gmail.com">
-                            <input type="email" id="email">
-                            <input type="submit" id="submit" value="Subscribe">
+                        <h2 id="Hfooter">Contact Me</h2>
+                        <p id="footerP">Have Any Questions? Email Me right here!</p>
+                        <form
+                            action="https://griffinjoshs.us10.list-manage.com/subscribe/post?u=bae03c445705bdd3413a57657&amp;id=6f369dff23"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" novalidate></form>
+                        <input type="email" id="email">
+                        <input type="submit" id="submit" value="email">
                         </form>
                     </div>
                 </div>
             </div>
             <p class="footer-bottom-text">All Rights Reserved by &copy;Griffin Joshs.2020</p>
     </footer>
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bae03c445705bdd3413a57657/a5fb722beff58757a2a8b8b34.js");</script>
+    <script
+        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/bae03c445705bdd3413a57657/a5fb722beff58757a2a8b8b34.js");</script>
 </body>
 
 </html>
+
+<!-- mailto:griffinjoshs99@gmail.com  -->

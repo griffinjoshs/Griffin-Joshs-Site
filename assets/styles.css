@@ -2,6 +2,12 @@ body {
     background-color: #000000 !important;
 }
 
+@media (max-width: 575px){
+    body {
+        width: 100%;
+    }
+}
+
  /* Navbar Scroll */
  .bg-dark {
     background-color: transparent !important;
@@ -57,7 +63,6 @@ body {
   position: relative;
   width: 100%;
   padding-top: 150px;
-  padding-bottom: 100px;
   color: white;
   background: url('../assets/images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
   background: url('../assets/images/bg-pattern.png'), linear-gradient(to center, #19388b, #3da8e6);
@@ -72,6 +77,13 @@ body {
 
 .phone-2 {
     box-shadow: 0 27px 37px 0 rgba(0,2,0,0.2);
+}
+
+@media (max-width: 575px){
+    .phone-2 {
+    width: 270px;
+    height: 550px;
+    }
 }
 
     /* Cool Buttons */
@@ -148,19 +160,6 @@ body {
         color: #050e27!important;
 }    
     /* Cool Buttons End */
-    
-#leftButton {
-    background-color: transparent;
-    border: solid white;
-    border-radius: 20px;
-    margin: 10px;
-}
-
-#leftButton:hover {
-    font: transparent;
-    background-color: white;
-    color: #19388b;
-}
 
 #topButton {
     background-color: white;
@@ -190,146 +189,6 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* parallax */
-
-.parallax {
-    /* The image used */
-    background-image: url("../assets/images/griffin.JPG");
-  
-    /* Set a specific height */ 
-    min-height: 700px; 
-
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-  }
-
-.font-weight {
-    font-size: 70px;
-    font-weight: bolder;
-}
-
-#introCol {
-    font-size: 48px;
-    font-weight: lighter;
-}
-
-#space {
-    padding-top: 30px;
-    padding-bottom: 0px;
-}
-
-#fluid1 {
-    background-image: url("../assets/images/marble.jpg"); 
-    background-color: #f1f4fa;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#parallax2 { 
-    background-image: url("../assets/images/gainer.jpg");
-    min-height: 500px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#congrats {
-    padding-top: 20px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-}
-
-#congratsP {
-    padding-top: 20px;
-    padding-bottom: 5px;
-    line-height: 1.2;
-    font-size: 35px;
-    text-align: center;
-}
-
-#butcont {
-    height: 124px;
-    position: relative;
-}
-
-#SubButton {
-    margin: 0;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background: linear-gradient(to right,  #000000, #19388b);
-    width: 20%;
-    height: 40%;
-    border: transparent;
-}
-
-#SubButton:hover {
-    opacity: 70%;
-}
-
-.card-body {
-    box-shadow: 0 11px 20px 0 rgba(0,2,0,0.2);
-}
-
-.card-body:hover {
-    box-shadow: 0 27px 37px 0 rgba(0,2,0,0.2);
-    background-color: rgb(221, 220, 220);
-}
-
-#Image233 {
-    text-align: center;
-    margin-bottom: 120px;
-}
-
-@media (max-width: 575px){
-#Image233 {
-    height: 265px;
-    width: 355px;
-}}
-
-#row233 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: url('../assets/images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
-}
-
-#btnCard {
-    background-color: rgb(64, 205, 224);
-    border: solid rgb(64, 205, 224);
-}
-
-#btnCard:hover {
-    background-color: black;
-    border: solid black;
-}
-
-#bottom {
-    background-image: url("../assets/images/gainer.jpg");
-    min-height: 500px; 
-    padding-top: 150px;
-    padding-bottom: 150px;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#CTA {
-    padding-top: 30px;
-    text-align: center;
-    font-size: 35px;
-    opacity: 100%;
-}
-
-/* parallax */
 /* service boxes */
 #iconBars {
     padding-top: 30px;
@@ -425,7 +284,7 @@ footer {
 }
 
 #footerP {
-    color: #999999;
+    color: white;
     line-height: 25px;
 }
 
