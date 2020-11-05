@@ -1,5 +1,6 @@
 body {
     background-color: #000000 !important;
+    width: 100%!important;
 }
 
 @media (max-width: 575px){
@@ -45,8 +46,21 @@ body {
     }
 }
 
-.navbar-nav mr-auto {
-    color: white;
+.navbar {
+    padding-left: 50px!important;
+}
+
+.navMenu {
+    padding-left: 70px!important;
+}
+
+@media (max-width: 575px){
+.navbar {
+    padding-left: 0px!important;
+}
+.navMenu {
+    padding-left: 100px!important;
+}
 }
 
 .ion-icon {
@@ -399,3 +413,144 @@ footer {
     background-color: #000000;
     line-height: 75px;
 }
+
+/* End of Homepage */
+
+/* Contact Page */
+
+/* Contact Form */
+#form {
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+}
+
+@media (max-width: 575px){
+#form {
+    width: 100%;
+}
+}
+
+
+#info {
+    border-radius: 5px;
+    width: 30%;
+    padding: 20px;
+}
+@media (max-width: 575px){
+#info {
+    width: 100%;
+
+}
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Wave CSS */
+/* body {
+    background-color: #f1f4fa!important;
+} */
+/* 
+.wave {
+    background-color: transparent;
+    position: relative;
+}
+
+.wave::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url(assets/images/curve.png);
+} */
+
+/* Wave CSS End */
+
+#contact {
+    text-align: center;
+}
+
+.h {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* #formContainer {
+    margin-top: -140px;
+} */
+
+/* Cool Buttons */
+.submit {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+      /* display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox; */
+}
+
+.submit:hover,
+.submit:focus {
+    color: #fff!important;
+    outline: 0;
+}
+
+#contactbutton {
+    border: 3px solid #3da8e6!important;
+    color: white!important;
+    background-color:  #19388b!important;
+    background-image: -webkit-linear-gradient(45deg, #3da8e6 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #3da8e6 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out!important;
+    transition: background 300ms ease-in-out!important;
+    font-size: 17px!important;
+    height: 60px;
+    width: 220px;
+    border-radius: 15px!important;
+}
+
+#contactbutton:hover {
+    background-position: 0!important;
+    color: #050e27!important;
+}    
+/* button end */
+
+#contaction {
+height: 60px;
+width: 40px;
+}
+
