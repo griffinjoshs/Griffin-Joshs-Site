@@ -47,10 +47,6 @@ body {
 }
 
 .navbar {
-    padding-left: 50px!important;
-}
-
-.navMenu {
     padding-left: 70px!important;
 }
 
@@ -419,79 +415,7 @@ footer {
 
 /* Contact Page */
 
-/* Contact Form */
-#form {
-    border-radius: 5px;
-    padding: 20px;
-    width: 30%;
-}
 
-@media (max-width: 575px){
-#form {
-    width: 100%;
-}
-}
-
-
-#info {
-    border-radius: 5px;
-    width: 30%;
-    padding: 20px;
-}
-@media (max-width: 575px){
-#info {
-    width: 100%;
-
-}
-}
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-/* Wave CSS */
-/* body {
-    background-color: #f1f4fa!important;
-} */
-/* 
-.wave {
-    background-color: transparent;
-    position: relative;
-}
-
-.wave::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    background: url(assets/images/curve.png);
-} */
-
-/* Wave CSS End */
-
-#contact {
-    text-align: center;
-}
-
-.h {
-    font-weight: bold;
-    text-align: center;
-}
-
-/* #formContainer {
-    margin-top: -140px;
-} */
 
 /* Cool Buttons */
 .submit {
@@ -539,8 +463,8 @@ textarea {
     -webkit-transition: background 300ms ease-in-out!important;
     transition: background 300ms ease-in-out!important;
     font-size: 17px!important;
-    height: 60px;
-    width: 220px;
+    height: 40px;
+    width: 160px;
     border-radius: 15px!important;
 }
 
@@ -551,21 +475,23 @@ textarea {
 /* button end */
 
 #contaction {
-height: 60px;
-width: 40px;
+height: 70px;
+width: 45px;
 color: #fff;
 }
 
 #contaction:hover {
-    height: 65px;
-    width: 45px;
+    height: 80px;
+    width: 50px;
 }
 
-#info {
+/* #info {
     background: linear-gradient(to right,  #000000, #19388b);
     box-shadow: 0 9px 21px 0 rgba(0,2,0,0.2);
     text-align: center;
-}
+    padding-bottom: 80px;
+    margin-bottom: 20px;
+} */
 
 #infoText {
     color: #fff;

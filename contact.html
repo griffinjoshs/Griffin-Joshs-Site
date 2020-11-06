@@ -32,13 +32,107 @@
 <!-- (all other styles on /styles.css) -->
 <style>
     /* Navbar Scroll */
- .bg-dark {
-    background-color: transparent !important;
-}
+    .bg-dark {
+        background-color: transparent !important;
+    }
 
-body {
-    background-color: white !important;
-}
+    body {
+        background-color: #f1f4fa !important;
+    }
+
+    #contact {
+        text-align: center;
+    }
+
+    .h {
+        text-align: center;
+    }
+
+    /* Style inputs, select elements and textareas */
+    input[type=text],
+    select,
+    textarea,
+    #input_7 {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #form {
+        width: 100%;
+        height: 75%;
+    }
+
+    /* Style the label to display next to the inputs */
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    /* Clear floats after the columns */
+    .container:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 575px) {
+        body {
+            width: 100% !important;
+        }
+    }
+
+    #formContainer {
+        box-shadow: 0 9px 21px 0 rgba(0, 2, 0, 0.2);
+        background-color: white;
+    }
+
+    #info {
+        background: linear-gradient(to right, #000000, #19388b);
+        box-shadow: 0 9px 21px 0 rgba(0, 2, 0, 0.2);
+        text-align: center;
+        margin-top: -48px;
+        margin-bottom: 0%;
+    }
+
+    #formtitle {
+        text-align: center !important;
+    }
+
+    @media (max-width: 575px) {
+        #infoText {
+            padding-bottom: 50px;
+        }
+    }
+    
 </style>
 
 <body>
@@ -46,8 +140,8 @@ body {
     <body>
         <!-- ======= Menu ======= -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-            <a href="https://www.griffinjoshs.com/" id="logo"><img src="assets/images/griffinjoshs belin sans.png" width="200"
-                    height="45"></a>
+            <a href="https://www.griffinjoshs.com/" id="logo"><img src="assets/images/griffinjoshs belin sans.png"
+                    width="200" height="45"></a>
             <!-- <a href="#" class="navbar-brand" id="username">@griffinjoshs</a> -->
             <!-- ======= Mobile Menu ======= -->
             <button class="navbar-toggler">
@@ -89,103 +183,210 @@ body {
             <br>
             <br>
             <br>
+            <br>
             </div>
             </div>
             <!-- <section class="wave"></section> -->
         </header>
-
+        <br>
+        <br>
+        <br>
         <div class="container" id="formContainer">
             <br>
             <br>
-            <br>
-            <br>
             <div class="row">
-                <div class="col-md-6" id="form">
-                    <!-- <img src="assets/images/griffinjoshs background.png" width="520" height="170"> -->
-                    <h4>Send Message</h4>
-                    <form class="contact-form" action="contactform.php" method="POST">
-                        <input type="text" name="name" placeholder="Full name">
-                        <input type="text" name="mail" placeholder="your Email">
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="message" placeholder="Message"></textarea>
-                        <button type="submit" id="contactbutton" name="submit">Send Mail</button>
-                    </form>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-5" id="info">
-                    <br>                   
-                    <!-- <img src="assets/images/griffinjoshs belin sans.png" width="300" height="65"> -->
-                    <br>
-                    <br>
-                    <ion-icon name="mail-sharp" id="contaction"> </ion-icon>
-                    <h4 id="infoText">griffinjoshs99@gmail.com<h4>
-                    <br>
-                    <br>
-                    <ion-icon name="call-sharp" id="contaction">‬</ion-icon>
-                    <h4 id="infoText">(732) 455-9509</h4>
-                </div>
-            </div>
-            </div>
-            <br>
-            <br>
-            <!-- footer -->
-    <!-- footer -->
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-                        <h3 id="Hfooter">@griffinjoshs</h3>
-                        <p id="footerP">Welcome To My Website! It is currently under contruction, but when it is done, I
-                            will be dropping merchandise and a tiktok and instagram growth course. If you are a brand
-                            and would like to work with me, click the brands button below!</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
-                        <h2 id="Hfooter">Follow All My Socials</h2>
-                        <a href="https://www.tiktok.com/@griffinjoshs">
-                            <ion-icon class="ion-icon" name="logo-tiktok"></ion-icon>
-                        </a>
-                        <a href="https://www.instagram.com/griffinjoshs">
-                            <ion-icon class="ion-icon" name="logo-instagram"></ion-icon>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCsgvrawx0Kv5nVMsdM2tNLQ">
-                            <ion-icon class="ion-icon" name="logo-youtube"></ion-icon>
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
-                        <h2 id="Hfooter">Pages</h2>
-                        <ul class="navbar-nav mr-auto">
-                            <!-- ======= Navbar Links ======= -->
-                            <li class="nav-item">
-                                <a href="https://www.griffinjoshs.com/" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="store.html" class="nav-link">Store</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://quiktok.io/influencer.php?influencer=942612495955" class="nav-link">TikTok Promos</a>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-                        <h2 id="Hfooter">Contact Me</h2>
-                        <p id="footerP">Have Any Questions? Email Me right here!</p>
-                        <form
-                            action="https://griffinjoshs.us10.list-manage.com/subscribe/post?u=bae03c445705bdd3413a57657&amp;id=6f369dff23"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_blank" novalidate></form>
-                        <input type="email" id="email">
-                        <input type="submit" id="submit" value="email">
+
+                <div class="col-md-6" id="form">
+                    <div class="container" id="form">
+                        <link type="text/css" rel="stylesheet"
+                            href="https://cdn.jotfor.ms/css/styles/buttons/form-submit-button-carbon_rounded.css?3.3.21469" />
+                        <form class="jotform-form" action="https://submit.jotform.com/submit/203085518791157/"
+                            method="post" name="form_203085518791157" id="203085518791157" accept-charset="utf-8"
+                            autocomplete="on">
+                            <input type="hidden" name="formID" value="203085518791157" />
+                            <input type="hidden" id="JWTContainer" value="" />
+                            <input type="hidden" id="cardinalOrderNumber" value="" />
+                            <div role="main" class="form-all">
+                                <ul class="form-section page-section">
+                                    <li class="form-line" data-type="control_fullname" id="id_10">
+                                        <label class="form-label form-label-top form-label-auto" id="label_10"
+                                            for="first_10">
+                                            <h4 id="formtitle">Send It</h4>
+                                        </label>
+                                        <div id="cid_10" class="form-input-wide">
+                                            <div data-wrapper-react="true">
+                                                <span class="form-sub-label-container" style="vertical-align:top"
+                                                    data-input-type="first">
+                                                    <label class="form-sub-label" for="first_10" id="sublabel_10_first"
+                                                        style="min-height:13px" aria-hidden="false"> </label>
+                                                    <input type="text" placeholder="First Name" id="first_10"
+                                                        name="q10_name[first]" class="form-textbox" size="10" value=""
+                                                        data-component="first"
+                                                        aria-labelledby="label_10 sublabel_10_first" />
+
+                                                </span>
+                                                <span class="form-sub-label-container" style="vertical-align:top"
+                                                    data-input-type="last">
+                                                    <label class="form-sub-label" for="last_10" id="sublabel_10_last"
+                                                        style="min-height:13px" aria-hidden="false"></label>
+                                                    <input type="text" placeholder="Last Name" id="last_10"
+                                                        name="q10_name[last]" class="form-textbox" size="15" value=""
+                                                        data-component="last"
+                                                        aria-labelledby="label_10 sublabel_10_last" />
+
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="form-line jf-required" data-type="control_email" id="id_7">
+                                        <label class="form-label form-label-top form-label-auto" id="label_7"
+                                            for="input_7">
+                                            <span class="form-required">
+                                            </span>
+                                        </label>
+                                        <div id="cid_7" class="form-input-wide jf-required">
+                                            <input type="email" placeholder="E-mail" id="input_7" name="q7_email"
+                                                class="form-textbox validate[required, Email]" size="25" value=""
+                                                placeholder=" " data-component="email" aria-labelledby="label_7"
+                                                required="" />
+                                        </div>
+                                    </li>
+                                    <li class="form-line jf-required" data-type="control_textarea" id="id_4">
+                                        <label class="form-label form-label-top form-label-auto" id="label_4"
+                                            for="input_4">
+                                            <span class="form-required">
+                                            </span>
+                                        </label>
+                                        <div id="cid_4" class="form-input-wide jf-required">
+                                            <textarea id="input_4" placeholder="Message"
+                                                class="form-textarea validate[required]" name="q4_message4" cols="28"
+                                                rows="6" data-component="textarea" required=""
+                                                aria-labelledby="label_4"></textarea>
+                                        </div>
+                                        <br>
+                                        <br>
+                                    </li>
+                                    <li class="form-line" data-type="control_button" id="id_12">
+                                        <div id="cid_12" class="form-input-wide">
+                                            <div style="text-align:center" data-align="center"
+                                                class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField">
+                                                <button id="contactbutton" type="submit"
+                                                    class="form-submit-button form-submit-button-carbon_rounded submit-button jf-form-buttons jsTest-submitField"
+                                                    data-component="button" data-content="">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li style="display:none">
+                                        Should be Empty:
+                                        <input type="text" name="website" value="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <script>
+                                JotForm.showJotFormPowered = "new_footer";
+                            </script>
+                            <script>
+                                JotForm.poweredByText = "Powered by JotForm";
+                            </script>
+                            <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc"
+                                value="203085518791157" />
+                            <script type="text/javascript">
+                                var all_spc = document.querySelectorAll("form[id='203085518791157'] .si" + "mple" + "_spc");
+                                for (var i = 0; i < all_spc.length; i++) {
+                                    all_spc[i].value = "203085518791157-203085518791157";
+                                }
+                            </script>
+                            <div class="formFooter-heightMask"></div>
                         </form>
                     </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-5" id="info">
+                    <br>
+                    <br>
+                    <img src="assets/images/griffinjoshs belin sans.png" id="logoCont" width="300" height="70">
+                    <br>
+                    <br>
+                    <br>
+                    <ion-icon name="mail-sharp" id="contaction"></ion-icon>
+                    <h4 id="infoText">griffinjoshs99@gmail.com<h4>
+                            <br>
+                            <br>
+                            <br>
+                            <ion-icon name="call-sharp" id="contaction">‬</ion-icon>
+                            <h4 id="infoText">(732) 455-9509</h4>
+
+                </div>
+
+
             </div>
-            <p class="footer-bottom-text">All Rights Reserved by &copy;Griffin Joshs.2020</p>
-    </footer>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- footer -->
+        <!-- footer -->
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                            <h3 id="Hfooter">@griffinjoshs</h3>
+                            <p id="footerP">Welcome To My Website! It is currently under contruction, but when it is
+                                done, I
+                                will be dropping merchandise and a tiktok and instagram growth course. If you are a
+                                brand
+                                and would like to work with me, click the brands button below!</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                            <h2 id="Hfooter">Follow All My Socials</h2>
+                            <a href="https://www.tiktok.com/@griffinjoshs">
+                                <ion-icon class="ion-icon" name="logo-tiktok"></ion-icon>
+                            </a>
+                            <a href="https://www.instagram.com/griffinjoshs">
+                                <ion-icon class="ion-icon" name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCsgvrawx0Kv5nVMsdM2tNLQ">
+                                <ion-icon class="ion-icon" name="logo-youtube"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+                            <h2 id="Hfooter">Pages</h2>
+                            <ul class="navbar-nav mr-auto">
+                                <!-- ======= Navbar Links ======= -->
+                                <li class="nav-item">
+                                    <a href="https://www.griffinjoshs.com/" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="store.html" class="nav-link">Store</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://quiktok.io/influencer.php?influencer=942612495955"
+                                        class="nav-link">TikTok Promos</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-bottom-text">All Rights Reserved by &copy;Griffin Joshs.2020</p>
+        </footer>
     </body>
 
 </html>
