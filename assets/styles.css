@@ -531,7 +531,7 @@ textarea {
 #contactbutton {
     border: 3px solid #3da8e6!important;
     color: white!important;
-    background-color:  #19388b!important;
+    background-color: #19388b!important;
     background-image: -webkit-linear-gradient(45deg, #3da8e6 50%, transparent 50%);
     background-image: linear-gradient(45deg, #3da8e6 50%, transparent 50%);
     background-position: 100%;
