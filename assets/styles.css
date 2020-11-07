@@ -201,6 +201,11 @@ p {
 }
 
 /* service boxes */
+#merch {
+    display: block;
+    text-decoration: none;
+}
+
 #iconBars {
     padding-top: 30px;
 }
