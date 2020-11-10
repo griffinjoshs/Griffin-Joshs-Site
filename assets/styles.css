@@ -31,6 +31,10 @@ body {
 .navbar-dark:hover {
     color: #3da8e6;
 }
+ 
+/* #navMenu {
+    padding-right: 30px !important;
+} */
 
 .navbar-brand {
     padding-right: 150px;
@@ -86,8 +90,7 @@ body {
 }
 
 .phone-2 {
-    box-shadow: 0 27px 37px 0 rgba(0,2,0,0.2);
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 @media (max-width: 575px){
@@ -414,6 +417,10 @@ footer {
     color:#19388b ;
     background-color: #000000;
     line-height: 75px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
 }
 
 /* End of Homepage */

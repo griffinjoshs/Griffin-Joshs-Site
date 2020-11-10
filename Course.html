@@ -40,6 +40,22 @@
     body {
         margin: 0;
         padding: 0;
+        background-color: #f1f4fa!important;
+    }
+
+    .wave {
+        background-color: transparent;
+        position: relative;
+    }
+
+    .wave::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: url(assets/images/curve.png);
     }
 
     #contact {
@@ -48,6 +64,23 @@
 
     .h {
         text-align: center;
+    }
+
+    #Name {
+        margin-top: -10%;
+        margin-left: -10%;
+    }
+
+    .lead {
+        margin-left: -10%;
+    }
+
+    #btns {
+        margin-left: -10%;
+    }
+
+    #contBlu {
+        width: 100%;
     }
 
 </style>
@@ -63,7 +96,7 @@
             <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarMenu"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto" id="navMenu">
                 <!-- ======= Navbar Links ======= -->
                 <li class="nav-item">
                     <a href="https://www.griffinjoshs.com/" class="nav-link">Home</a>
@@ -97,16 +130,99 @@
     </nav>
 
     <header class="masthead">
-        <h1 id="contact">TikTok Growth Course</h1>
-        <p class="h">Gain the knowlege to grow your TikTok and become a successful influencer!</p>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="top">
+                        <h1 class="display-4" id="Name"><strong>TikTok Growth Course</strong></h1>
+                        <p class="lead">Gain the knowlege to grow your TikTok and become a successful influencer!</p>
+                        <button class="btn third" id="btns" href="#">FANS click here</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image" id="phone">
+                        <img src="assets/images/tiktok-1-233-nolabel.png" height="450px" width="600px" alt="Image"
+                            class="phone-2">
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        <!-- <section class="wave"></section> -->
+        <section class="wave"></section>
     </header>
+
+    <div class="container-fluid" id="contBlu">
+        <div class="row">
+            <div class="col-lg-12">
+                <section>
+                    <div class="container" id="iconBars">
+                        <div class="row mbr-justify-content-center">
+                            <div class="col-lg-6 mbr-col-md-10" id="merch">
+                                <div class="wrap">
+                                    <div class="ico-wrap">
+                                        <ion-icon name="shirt" id="boxicons"></ion-icon>
+                                    </div>
+                                    <div class="text-wrap vcenter">
+                                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Check Out
+                                            <span>My Merchandise</span></h2>
+                                        <p class="mbr-fonts-style text1 mbr-text display-6">Coming Soon! I will be dropping a
+                                            whole
+                                            clothing line, if u want to get notified before anyone, subscribe to my OG squad
+                                            below!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mbr-col-md-10">
+                                <div class="wrap">
+                                    <div class="ico-wrap">
+                                        <ion-icon name="rocket" id="boxicons"></ion-icon>
+                                    </div>
+                                    <div class="text-wrap vcenter" a href>
+                                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Learn how to Grow
+                                            Followers on TikTok</h2>
+                                        <p class="mbr-fonts-style text1 mbr-text display-6">Want to get famous on social media? I
+                                            will teach u the steps I have used to grow and monitize my Social Media following.
+                                            Subscribe to my email list to be notified before anyone else!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mbr-col-md-10">
+                                <div class="wrap">
+                                    <div class="ico-wrap">
+                                        <ion-icon name="logo-paypal" id="boxicons"></ion-icon>
+                                    </div>
+                                    <div class="text-wrap vcenter">
+                                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Join
+                                            <span>My Patreon Community</span>
+                                        </h2>
+                                        <p class="mbr-fonts-style text1 mbr-text display-6">Joining my patreon, you not only get
+                                            exclusive content, but you do get discounts and potential free merchandise and my
+                                            course!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mbr-col-md-10">
+                                <div class="wrap">
+                                    <div class="ico-wrap">
+                                        <ion-icon name="logo-tiktok" id="boxicons"></ion-icon>
+                                    </div>
+                                    <div class="text-wrap vcenter">
+                                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Buy A <span>TikTok
+                                                Promotion</span></h2>
+                                        <p class="mbr-fonts-style text1 mbr-text display-6">Want me to advertise your song, duet or
+                                            stitch your video? Check out my promotion prices here! For Patreon Members it will be a
+                                            much reduced price!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
