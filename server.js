@@ -1,16 +1,29 @@
-var express = require("express");
-var PORT = process.env.PORT || 3000;
-var app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
+const path = require("path");
+const PORT = process.env.PORT || 3000;
+const app = express();
+
+// View engine setup
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
 
 // Serve static content for the app from the "public" directory in the application directory.
+// (html allower)
 app.use(express.static("public"));
+// Static folder (handlebars allower)
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Parse application body as JSON
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// Body Parser Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
 
 // Import routes and give the server access to them.
-// var routes = require("./controllers/burgerController.js");
+require("./routes/nodeMailerRoutes.js")(app);
+require("./routes/htmlroutes.js")(app);
 
 // app.use(routes);
 

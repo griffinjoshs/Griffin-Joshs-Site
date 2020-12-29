@@ -3,7 +3,7 @@ body {
     width: 100%!important;
 }
 
-@media (max-width: 575px){
+@media (max-width: 945px){
     body {
         width: 100%;
     }
@@ -87,6 +87,11 @@ body {
   color: white;
   background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
   background: url('../assets/bg-pattern.png'), linear-gradient(to center, #19388b, #3da8e6);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 575px){
@@ -189,6 +194,11 @@ body {
 
 #nav-color {
     color: white;
+    font-weight: bold;
+}
+
+#nav-color:hover {
+    color: #3DA8E6;
 }
 
 .top {
@@ -321,6 +331,11 @@ footer {
 .footer-top {
     padding-top: 100px;
     background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     
 }
 
@@ -521,3 +536,155 @@ color: #fff;
 #infoText:hover {
     color: #fff;
 }
+
+/* Subscribe Button */
+:root {
+    --main-color: white;
+    --accent-color: dodgerblue;
+}
+
+/* body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--accent-color);
+} */
+
+body,
+#singular-form button,
+#btnContainer>#singular-form>#input-container>input {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#btnContainer {
+    width: 11.4rem;
+    height: 3rem;
+    padding: 10px;
+    background-color: var(--main-color);
+    text-align: center;
+    border-radius: 3rem;
+    overflow: hidden;
+    transition: width .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+#btnContainer>#singular-form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: --main-color;
+}
+
+#btnContainer>#singular-form button {
+    width: 9rem;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+#btnContainer>#singular-form>button#trigger {
+    padding: 0;
+    width: 100%;
+    color: var(--accent-color);
+    background-color: transparent;
+    z-index: 3;
+}
+
+#btnContainer>#singular-form>#input-container {
+    z-index: 2;
+}
+
+#btnContainer>#singular-form>#input-container>input {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0 26% 0 3%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .4s ease .4s;
+}
+
+#btnContainer>#singular-form>#input-container>button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    opacity: 0;
+    transform: scale(0);
+    transition: all .4s ease .4s;
+}
+
+#btnContainer>#singular-form>button#trigger,
+#btnContainer>#singular-form>#input-container,
+#btnContainer>#singular-form>#success {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    opacity: 0;
+}
+
+#btnContainer>#singular-form>button#trigger {
+    transition: all .4s ease;
+}
+
+#btnContainer>#singular-form>#input-container {
+    transform: scale(1);
+    opacity: 1;
+    transition: all .4s ease .4s;
+}
+
+#btnContainer>#singular-form>#success {
+    transition: all .2s ease .4s;
+}
+
+#btnContainer>#singular-form>button#trigger.shown,
+#btnContainer>#singular-form>#input-container.shown,
+#btnContainer>#singular-form>#success.shown,
+#btnContainer>#singular-form>#input-container>button.shown,
+#btnContainer>#singular-form>#input-container>input.shown {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* contact */
+#contactMasthead {
+    position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
+  background: url('../assets/bg-pattern.png'), linear-gradient(to center, #19388b, #3da8e6);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contactTitle {
+    color: white;
+    text-align: center;
+}
+
+#contactMe {
+    font-size: 50px;
+}
+
+#contIcon {
+    font-size: 30px;
+}
+
