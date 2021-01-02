@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require("path");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 9999;
 const app = express();
 
 // View engine setup
@@ -24,8 +24,6 @@ app.use(bodyParser.json());
 // Import routes and give the server access to them.
 require("./routes/nodeMailerRoutes.js")(app);
 require("./routes/htmlroutes.js")(app);
-
-// app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function () {

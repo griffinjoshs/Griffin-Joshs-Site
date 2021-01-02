@@ -5,15 +5,9 @@
 
 // DEPENDENCIES
 const path = require("path");
-const exphbs = require('express-handlebars');
-const express = require('express');
-const app = express();
+// const express = require('express');
+// const app = express();
 
-// Requiring our custom middleware for checking if a user is logged in
-// var isAuthenticated = require("../config/middleware/isAuthenticated"); This is not implemented at this time
-// View engine setup
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
 // ROUTES
 
 module.exports = function (app) {

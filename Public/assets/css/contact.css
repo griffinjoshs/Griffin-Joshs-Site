@@ -70,11 +70,17 @@
     grid-column: 1 / 3;
   }
   
-  .contact form button, .contact form input, .contact form textarea{
+  .contact form button, .contact form .four, .contact form textarea{
     width:100%;
     padding:1em;
     border:1px solid #c9e6ff;
   }
+
+  #subject {
+  width:206%;
+  padding:1em;
+  border:1px solid #c9e6ff;
+}
   
   .contact form button{
     background:#c9e6ff;

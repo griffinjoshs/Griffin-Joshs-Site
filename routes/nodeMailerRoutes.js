@@ -1,16 +1,15 @@
+// contact form + mailchimp add api calls
 const nodemailer = require('nodemailer');
-// var path = require("path");
-// const fs = require('fs');
-// const bodyParser = require('body-parser');
-// const exphbs = require('express-handlebars');
+const request = require('request');
+
 module.exports = function (app) {
-  
   app.post('/send', (req, res) => {
     const output = `
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
     <ul>
-    <li>Name: ${req.body.name}</li>
+    <li>First Name: ${req.body.firstName}</li>
+    <li>Last Name: ${req.body.lastName}</li>
     <li>Email: ${req.body.email}</li>
     <li>Phone: ${req.body.phone}</li>
     <li>Subject: ${req.body.subject}</li>
@@ -18,35 +17,77 @@ module.exports = function (app) {
     <h3>Message</h3>
     <p>${req.body.message}</p>
     `;
-  
-  // gmail
-  const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'griffinjoshs99@gmail.com',
-    pass: 'sozarzbbhmizmpko' // naturally, replace both with your real credentials or an application-specific password
-  },
-  tls:{
-          rejectUnauthorized:false
+
+    // gmail
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'griffinjoshs99@gmail.com',
+        pass: 'sozarzbbhmizmpko' // naturally, replace both with your real credentials or an application-specific password
+      },
+      tls: {
+        rejectUnauthorized: false
+      }
+    });
+
+    const mailOptions = {
+      from: `${req.body.email}`,
+      to: 'griffinjoshs99@gmail.com',
+      subject: `${req.body.subject}`,
+      text: `${req.body.message}`
+    };
+
+    transporter.sendMail(mailOptions, function (error, info) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+        console.log(output);
+        // res.redirect('/')
+        // console.log('Email sent: ' + info.response);
+      }
+    });
+    
+    // construct req data
+    const data = {
+      members: [
+        {
+          email_address: req.body.email,
+          status: 'subscribed',
+          merge_fields: {
+            FNAME: req.body.firstName,
+            LNAME: req.body.lastName,
+            PHONE: req.body.phone
+          }
         }
-  });
+      ]
+    }
   
-  const mailOptions = {
-  from: `${req.body.email}`,
-  to: 'griffinjoshs99@gmail.com',
-  subject: `${req.body.subject}`,
-  text: `${req.body.message}`
-  };
-  
-  transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-  console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-    console.log(output);
-    res.redirect('/')
-    console.log('Email sent: ' + info.response);
-  }
-  });
-  });
-}
+
+    const postData = JSON.stringify(data);
+
+    const options = {
+      url: 'https://us10.api.mailchimp.com/3.0/lists/6f369dff23',
+      method: 'POST',
+      headers: {
+        Authorization: 'auth cc46aa0d0d6bf57e7f3a401f0d8828c5-us10'
+      },
+      body: postData
+    }
+
+    console.log(postData)
+
+    request(options, (err, response, body) => {
+      if (err) {
+        console.log(err)
+        res.alert('/fail.html');
+      } else {
+        if (response.statusCode === 200) {
+          res.redirect('/contact')
+        } else {
+          res.alert('/fail.html');
+        }
+      }
+    });
+  })};
+
