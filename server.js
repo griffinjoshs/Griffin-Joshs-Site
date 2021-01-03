@@ -2,8 +2,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require("path");
+
+require('dotenv').config();
+
 const PORT = process.env.PORT || 9999;
 const app = express();
+
 
 // View engine setup
 app.engine('handlebars', exphbs());

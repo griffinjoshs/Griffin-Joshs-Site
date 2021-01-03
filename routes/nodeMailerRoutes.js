@@ -1,6 +1,7 @@
 // contact form + mailchimp add api calls
 const nodemailer = require('nodemailer');
 const request = require('request');
+require('dotenv').config();
 
 module.exports = function (app) {
   app.post('/send', (req, res) => {
@@ -70,7 +71,7 @@ module.exports = function (app) {
       url: 'https://us10.api.mailchimp.com/3.0/lists/6f369dff23',
       method: 'POST',
       headers: {
-        Authorization: 'auth cc46aa0d0d6bf57e7f3a401f0d8828c5-us10'
+        Authorization: process.env.API_KEY
       },
       body: postData
     }
@@ -80,12 +81,12 @@ module.exports = function (app) {
     request(options, (err, response, body) => {
       if (err) {
         console.log(err)
-        res.alert('/fail.html');
+        res.redirect('/fail.html');
       } else {
         if (response.statusCode === 200) {
           res.redirect('/contact')
         } else {
-          res.alert('/fail.html');
+          res.redirect('/fail.html');
         }
       }
     });
