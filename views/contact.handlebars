@@ -5,15 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta name="description" content="TikToker, Social Media influencer, and Entrepeneur!">
-  <meta name="keywords" content="Griffin Joshs, Grow My TikTok, Grow my TikTok">
-  <meta name="author" content="Griffin Joshs"> -->
-  <title>Contact Griffin</title>
+        <meta name="keywords" content="Griffin Joshs, Grow My TikTok, Grow my TikTok">
+        <meta name="author" content="Griffin Joshs"> -->
+  <title>Griffin Joshs</title>
   <!-- Favicons -->
-  <link rel="icon" href="../Public/assets/images/griff3run logo.png" type="image/png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="../Public/assets/js/scripts.js"></script>
-  <link href="../Public/assets/images/griffinjoshs belin sans.png" rel="icon">
-  <link rel="stylesheet" href="../Public/assets/css/styles.css">
+  <link href="../Public/assets/images/griff3run logo.jpg" rel="icon">
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <!--===============================================================================================-->
+  <!--===============================================================================================-->
+  <!--===============================================================================================-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../Public/assets/css/util.css">
+  <link rel="stylesheet" type="text/css" href="../public/assets/css/contact.css">
+  <link rel="stylesheet" type="text/css" href="../public/assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../public/assets/css/styles.css"> 
+  <!--===============================================================================================-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,170 +46,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
+
 <!-- (all other styles on /styles.css) -->
 <style>
   /* Navbar Scroll */
   .bg-dark {
     background-color: transparent !important;
   }
-
-  /* Wave CSS */
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-
-  .wave {
-    background-color: transparent;
-    position: relative;
-  }
-
-  .wave::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    background: url(assets/images/curve.png);
-  }
-
-  /* contact handlebars */
-  * {
-    box-sizing: border-box;
-  }
-
-  #contCon {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-  }
-
-  #contactUl {
-    list-style: none;
-    padding: 0;
-  }
-
-  .brand {
-    text-align: center;
-  }
-
-  .brand span {
-    color: #fff;
-  }
-
-  #contWrap {
-    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
-  }
-
-  #contWrap>* {
-    padding: 1em;
-  }
-
-  .company-info {
-    background: #c9e6ff;
-  }
-
-  .company-info h3,
-  .company-info ul {
-    text-align: center;
-    margin: 0 0 1rem 0;
-  }
-
-  .contact {
-    background: #f9feff;
-  }
-
-  /* FORM STYLES */
-  .contact form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-
-  .contact form label {
-    display: block;
-  }
-
-  .contact form p {
-    margin: 0;
-  }
-
-  .contact form .full {
-    grid-column: 1 / 3;
-  }
-
-  .contact form button,
-  .contact form .four,
-  .contact form textarea {
-    width: 100%;
-    padding: 1em;
-    border: 1px solid #c9e6ff;
-  }
-
-  #subject {
-    width: 205%;
-    padding: 1em;
-    border: 1px solid #c9e6ff;
-  }
-
-@media (max-width: 1150px){
-  #subject {
-    width: 150%;
-  }
-}
-
-@media (max-width: 800px){
-  #subject {
-    width: 100%;
-  }
-}
-
-  .contact form button:hover,
-  .contact form button:focus {
-    background: #92bde7;
-    color: #fff;
-    outline: 0;
-    transition: background-color 2s ease-out;
-  }
-
-  /* LARGE SCREENS */
-  @media(min-width:700px) {
-    #contWrap {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-    }
-
-    #contWrap>* {
-      padding: 2em;
-    }
-
-    .company-info h3,
-    .company-info,
-    .brand #contactUL {
-      text-align: left;
-    }
-  }
-
-
-
-  #email {
-    height: 59px;
-    width: 325px;
-  }
 </style>
+
+
+<!-- ======= Menu ======= -->
+<!-- ======= Menu ======= -->
 
 <body>
   <!-- ======= Menu ======= -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <a href="/" class="animate__animated animate__bounce animate__" id="logo"><img
-        src="../Public/assets/images/griffinjoshs belin sans.png" width="200" height="45"></a>
+    <a href="https://www.griffinjoshs.com/" class="animate__animated animate__bounce animate__delay-1s" id="logo"><img
+        src="assets/images/griffinjoshs belin sans.png" width="200" height="45"></a>
     <!-- <a href="#" class="navbar-brand" id="username">@griffinjoshs</a> -->
     <!-- ======= Mobile Menu ======= -->
-    <button class="navbar-toggler animate__animated animate__heartBeat">
+    <button class="navbar-toggler">
       <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarMenu"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarMenu">
@@ -207,7 +80,7 @@
           <a href="/" id="nav-color" class="nav-link">Home</a>
         </li>
         <li class="nav-item text-decoration-none">
-          <a href="/shop" id="nav-color" class="nav-link">Shop</a>
+          <a href="https://teespring.com/stores/my-store-10056083" id="nav-color" class="nav-link">Shop</a>
         </li>
         <li class="nav-item text-decoration-none">
           <a href="/contact" id="nav-color" class="nav-link">Contact Me</a>
@@ -222,128 +95,220 @@
       </ul>
       <!-- ======= Social Media Icons/Links ======= -->
       <a href="https://www.tiktok.com/@griffinjoshs">
-        <ion-icon class="ion-icon animate__animated animate__pulse" name="logo-tiktok"></ion-icon>
+        <ion-icon class="ion-icon" name="logo-tiktok"></ion-icon>
       </a>
       <a href="https://www.instagram.com/griffinjoshs">
-        <ion-icon class="ion-icon animate__animated animate__pulse" name="logo-instagram"></ion-icon>
+        <ion-icon class="ion-icon" name="logo-instagram"></ion-icon>
       </a>
-      <a href="https://www.youtube.com/c/griffinjoshs">
-        <ion-icon class="ion-icon animate__animated animate__pulse" name="logo-youtube"></ion-icon>
+      <a href="https://www.youtube.com/channel/UCsgvrawx0Kv5nVMsdM2tNLQ">
+        <ion-icon class="ion-icon" name="logo-youtube"></ion-icon>
       </a>
     </div>
   </nav>
-  <header id="contactMasthead">
-    <br>
-    <!-- <section class="wave"></section> -->
-    <div class="container" id="contCon">
-      <div class="wrapper animated bounceInLeft" id="contWrap">
-        <div class="company-info">
-          <ul id="contactUl">
-            <br>
-            <br>
-            <h2 id="contactMe">Contact Me</h2>
-            <br>
-            <br>
-            <li><i class="fa fa-phone" id="contIcon"></i> (555) 555-5555</li>
-            <li><i class="fa fa-envelope" id="contIcon"></i> test@acme.test</li>
-          </ul>
-        </div>
-        <div class="contact row">
-          <h3>Email Us</h3>
-          {{msg}}
-          <form method="POST" action="send" onsubmit="alert('sent')">
-            <p>
-              <label>First Name</label>
-              <input class="four" type="text" id="firstName" name="firstName">
-            </p>
-            <p>
-              <label>Last Name</label>
-              <input class="four" type="text" id="lastName" name="lastName">
-            </p>
-            <p>
-              <label>Email Address</label>
-              <input class="four" type="email" id="email" name="email">
-            </p>
-            <p>
-              <label>Phone Number</label>
-              <input class="four" type="text" id="phone" name="phone">
-            </p>
-            <div id="subjectDiv">
-              <label>Subject</label>
-              <input type="text" id="subject" name="subject">
-            </div>
-            <p class="full">
-              <label>Message</label>
-              <textarea name="message" id="message" rows="5"></textarea>
-            </p>
-            <p class="full">
-              <button type="submit">Submit</button>
-            </p>
-          </form>
-        </div>
-      </div>
-    </div>
+  <header class="contactMasthead">
   </header>
-  <!-- footer -->
-  <!-- footer -->
-  <footer>
-    <div class="footer-top">
+
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <meta name="description" content="TikToker, Social Media influencer, and Entrepeneur!">
+        <meta name="keywords" content="Griffin Joshs, Grow My TikTok, Grow my TikTok">
+        <meta name="author" content="Griffin Joshs"> -->
+      <title>Griffin Joshs</title>
+      <!-- Favicons -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="assets/js/scripts.js"></script>
+      <link href="assets/images/griff3run logo.png" rel="icon">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
+      <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+      <!-- <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script> -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- (all other styles on /styles.css) -->
+    <style>
+      /* Navbar Scroll */
+      .bg-dark {
+        background-color: transparent !important;
+      }
+    </style>
+
+  <br>
+    <body>
+      <!-- ======= Menu ======= -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a href="https://www.griffinjoshs.com/" class="animate__animated animate__bounce animate__delay-1s"
+          id="logo"><img src="assets/images/griffinjoshs belin sans.png" width="200" height="45"></a>
+        <!-- <a href="#" class="navbar-brand" id="username">@griffinjoshs</a> -->
+        <!-- ======= Mobile Menu ======= -->
+        <button class="navbar-toggler">
+          <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarMenu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mr-auto" id="navMenu">
+            <!-- ======= Navbar Links ======= -->
+            <li class="nav-item text-decoration-none">
+              <a href="/" id="nav-color" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item text-decoration-none">
+              <a href="shop.html" id="nav-color" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item text-decoration-none">
+              <a href="contact.html" id="nav-color" class="nav-link">Contact Me</a>
+            </li>
+            <li class="nav-item text-decoration-none">
+              <a href="https://quiktok.io/influencer.php?influencer=942612495955" id="nav-color" class="nav-link">TikTok
+                Promos</a>
+            </li>
+            <li class="nav-item text-decoration-none">
+              <a href="https://griffinjoshs.teachable.com/" id="nav-color" class="nav-link">Course</a>
+            </li>
+          </ul>
+          <!-- ======= Social Media Icons/Links ======= -->
+          <a href="https://www.tiktok.com/@griffinjoshs">
+            <ion-icon class="ion-icon" name="logo-tiktok"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/griffinjoshs">
+            <ion-icon class="ion-icon" name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://www.youtube.com/channel/UCsgvrawx0Kv5nVMsdM2tNLQ">
+            <ion-icon class="ion-icon" name="logo-youtube"></ion-icon>
+          </a>
+        </div>
+      </nav>
+
       <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-            <h3 id="Hfooter">@griffinjoshs</h3>
-            <p id="footerP">Welcome To My Website! It is currently under contruction, but when it is
-              done, I
-              will be dropping merchandise and a tiktok and instagram growth course. If you are a
-              brand
-              and would like to work with me, click the brands button below!</p>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
-            <h2 id="Hfooter">Follow All My Socials</h2>
-            <a href="https://www.tiktok.com/@griffinjoshs">
-              <ion-icon class="ion-icon" name="logo-tiktok"></ion-icon>
-            </a>
-            <a href="https://www.instagram.com/griffinjoshs">
-              <ion-icon class="ion-icon" name="logo-instagram"></ion-icon>
-            </a>
-            <a href="https://www.youtube.com/channel/UCsgvrawx0Kv5nVMsdM2tNLQ">
-              <ion-icon class="ion-icon" name="logo-youtube"></ion-icon>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
-            <h2 id="Hfooter">Pages</h2>
-            <ul class="navbar-nav mr-auto">
-              <!-- ======= Navbar Links ======= -->
-              <li class="nav-item text-decoration-none">
-                <a href="/" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item text-decoration-none">
-                <a href="/shop" class="nav-link">Shop</a>
-              </li>
-              <li class="nav-item text-decoration-none">
-                <a href="/contact" class="nav-link">Contact Me</a>
-              </li>
-              <li class="nav-item text-decoration-none">
-                <a href="https://quiktok.io/influencer.php?influencer=942612495955" class="nav-link">TikTok
-                  Promos</a>
-              </li>
-              <li class="nav-item text-decoration-none">
-                <a href="Course.html" class="nav-link">Course</a>
-              </li>
+        <!-- <h1 class="brand"><span>Acme</span> Web Design</h1> -->
+        <div class="wrapper animated bounceInLeft">
+          <div class="company-info">
+            <h3>Contact Me</h3>
+            <ul>
+              {{!-- <li><i class="fa fa-road"></i> 44 Something st</li> --}}
+              <li><i class="fa fa-phone"></i> (732) 455-9509‬</li>
+              <li><i class="fa fa-envelope"></i> griffinjoshs99@gmail.com</li>
             </ul>
           </div>
+          <div class="contact">
+            <h3>Email Us</h3>
+            {{msg}}
+            <form method="POST" action="send" onsubmit="alert('sent')">
+              <div class="wrap-input1 validate-input" data-validate="First Name is required">
+                <input class="input1" type="text" name="firstName" id="firstName" placeholder="First Name">
+                <span class="shadow-input1"></span>
+              </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-            <h2 id="Hfooter">Subscribe</h2>
-            <p id="footerP">Get all updates, discounts, and free items by Subscribing!</p>
+              <div class="wrap-input1 validate-input" data-validate="Last Name is required">
+                <input class="input1" type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <span class="shadow-input1"></span>
+              </div>
+
+              <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                <input class="input1" type="email" name="email" id="email" placeholder="Email">
+                <span class="shadow-input1"></span>
+              </div>
+
+              <div class="wrap-input1 validate-input" data-validate="Valid phone number is required: 1234567890">
+                <input class="input1" type="text" name="number" id="number" placeholder="Phone Number">
+                <span class="shadow-input1"></span>
+              </div>
+              <div class="wrap-input1 validate-input full" data-validate="Subject is required">
+                <input class="input1" type="text" name="subject" id="subject" placeholder="Subject">
+                <span class="shadow-input1"></span>
+              </div>
+              <div class="wrap-input1 validate-input full" data-validate="Message is required">
+                <textarea class="input1" name="message" id="message" placeholder="Message"></textarea>
+                <span class="shadow-input1"></span>
+              </div>
+    </body>
+
+    <p class="full">
+      <button type="submit">Submit</button>
+    </p>
+    </form>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <!-- footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+              <h3 id="Hfooter">@griffinjoshs</h3>
+              <p id="footerP">Welcome To My Website! It is currently under contruction, but when it is done, I
+                will be dropping merchandise and a tiktok and instagram growth course. If you are a brand
+                and would like to work with me, click the brands button below!</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+              <h2 id="Hfooter">Follow All My Socials</h2>
+              <a href="https://www.tiktok.com/@griffinjoshs">
+                <ion-icon class="ion-icon" name="logo-tiktok"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/griffinjoshs">
+                <ion-icon class="ion-icon" name="logo-instagram"></ion-icon>
+              </a>
+              <a href="https://www.youtube.com/channel/UCsgvrawx0Kv5nVMsdM2tNLQ">
+                <ion-icon class="ion-icon" name="logo-youtube"></ion-icon>
+              </a>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12 segment-two">
+              <h2 id="Hfooter">Pages</h2>
+              <ul class="navbar-nav mr-auto">
+                <!-- ======= Navbar Links ======= -->
+                <li class="nav-item text-decoration-none">
+                  <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item text-decoration-none">
+                  <a href="https://teespring.com/stores/my-store-10056083" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item text-decoration-none">
+                  <a href="/contact" class="nav-link">Contact Me</a>
+                </li>
+                <li class="nav-item text-decoration-none">
+                  <a href="https://quiktok.io/influencer.php?influencer=942612495955" class="nav-link">TikTok Promos</a>
+                </li>
+                <li class="nav-item text-decoration-none">
+                  <a href="https://griffinjoshs.teachable.com/" class="nav-link">Course</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12 segment-four">
+              <h2 id="Hfooter">Subscribe</h2>
+              <p id="footerP">Get all updates, discounts, and free items by Subscribing!</p>
+
+              </section>
+            </div>
+
           </div>
         </div>
+        <br>
+        <br>
       </div>
       <p class="footer-bottom-text">All Rights Reserved by &copy;Griffin Joshs.2020</p>
-  </footer>
-</body>
-
-</html>
-</body>
-
-</html>
+    </footer>

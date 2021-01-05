@@ -32,6 +32,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     </head>
 
 <!-- (all other styles on /styles.css) -->
@@ -43,6 +45,58 @@
 </style>
 
 <body>
+
+    <div class="container">
+        <h1 class="brand"><span>Acme</span> Web Design</h1>
+        <div class="wrapper animated bounceInLeft">
+          <div class="company-info">
+            <h3>Acme Web Design</h3>
+            <ul>
+              {{!-- <li><i class="fa fa-road"></i> 44 Something st</li> --}}
+              <li><i class="fa fa-phone"></i> (732) 455-9509‬</li>
+              <li><i class="fa fa-envelope"></i> griffinjoshs99@gmail.com</li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h3>Email Us</h3>
+            {{msg}}
+            <form method="POST" action="send" onsubmit="alert('sent')">
+                <div class="wrap-input1 validate-input" data-validate="First Name is required">
+                        <input class="input1" type="text" name="firstName" id="firstName" placeholder="First Name">
+                        <span class="shadow-input1"></span>
+                      </div>
+    
+                      <div class="wrap-input1 validate-input" data-validate="Last Name is required">
+                        <input class="input1" type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        <span class="shadow-input1"></span>
+                      </div>
+    
+                      <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input1" type="email" name="email" id="email" placeholder="Email">
+                        <span class="shadow-input1"></span>
+                      </div>
+    
+                      <div class="wrap-input1 validate-input" data-validate="Valid phone number is required: 1234567890">
+                        <input class="input1" type="text" name="number" id="number" placeholder="Phone Number">
+                        <span class="shadow-input1"></span>
+                      </div>
+            <div class="wrap-input1 validate-input full" data-validate="Subject is required">
+                        <input class="input1" type="text" name="subject" id="subject" placeholder="Subject">
+                        <span class="shadow-input1"></span>
+                      </div>
+                      <div class="wrap-input1 validate-input full" data-validate="Message is required">
+                        <textarea class="input1" name="message" id="message" placeholder="Message"></textarea>
+                        <span class="shadow-input1"></span>
+                      </div>
+                         
+              <p class="full">
+                <button type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
     <body>
         <!-- ======= Menu ======= -->
          <!-- ======= Menu ======= -->

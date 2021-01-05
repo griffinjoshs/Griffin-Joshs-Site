@@ -1,0 +1,131 @@
+/* Footer Stylesheet */
+@media (max-width: 575px){
+    footer {
+        text-align: center;
+    }}
+    
+    .ion-icon {
+        color: #3da8e6;
+        font-size: 22px;
+        padding: 20px;
+    }
+    
+    .ion-icon:hover {
+        color: white;
+    }
+    
+    #footerP {
+        color: white;
+        line-height: 25px;
+    }
+    
+    #Hfooter {
+        color: white;
+        font-size: 18px;
+    
+    }
+    
+    .footer-top {
+        padding-top: 100px;
+        background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
+        /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+        
+    }
+    
+    .segment-one h3 {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 3px;
+        margin: 10px 0;
+    }
+    
+    .segment-two h2 {
+        color: #ffffff;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .segment-two h2::before {
+        content: '|';
+        color: #3da8e6;
+        padding-right: 10px;
+    }
+    
+    .segment-two ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .segment-two ul li {
+        line-height: 5px;
+        color: white;
+    }
+    
+    .segment-two ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .segment-three h2 {
+        color: #ffffff;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .segment-three h2::before {
+        content: '|';
+        color: #3da8e6;
+        padding-right: 10px;
+    }
+    
+    @media (max-width: 575px){
+    .segment-three {
+        padding-bottom: 30px;
+    }}
+    
+    @media (max-width: 575px){
+    .segment-two {
+        padding-bottom: 30px;
+    }}
+    
+    @media (max-width: 575px){
+    .segment-four {
+        padding-bottom: 30px;
+    }}
+    
+    #submit:hover {
+        color: #19388b;
+        background-color: white;
+    }
+    
+    @media (min-width: 575px){
+    #submit {
+        font-size: 14px;
+    }
+    }
+    
+    .segment-four form input[type=submit]{
+        background: transparent;
+        border: solid white;
+        padding: 3px 15px;
+        margin-left: -5px;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    .footer-bottom-text {
+        padding-top: 20px;
+        text-align: center;
+        color:#19388b ;
+        background-color: #000000;
+        line-height: 75px;
+    }
+    
+    .nav-item:hover {
+        text-decoration: underline;
+    }
+    

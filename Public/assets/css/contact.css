@@ -1,112 +1,282 @@
-*{
-    box-sizing: border-box;
-  }
-  
-  body{
-    background:#92bde7;
-    color:#485e74;
-    line-height:1.6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding:1em;
-  }
-  
-  .container{
-    max-width:1170px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:1em;
-  }
-  
-  ul{
-    list-style: none;
-    padding:0;
-  }
-  
-  .brand{
-    text-align: center;
-  }
-  
-  .brand span{
-    color:#fff;
-  }
-  
-  .wrapper{
-    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
-  }
-  
-  .wrapper > *{
-    padding: 1em;
-  }
-  
-  .company-info{
-    background:#c9e6ff;
-  }
-  
-  .company-info h3, .company-info ul{
-    text-align: center;
-    margin:0 0 1rem 0;
-  }
-  
-  .contact{
-    background:#f9feff;
-  }
-  
-  /* FORM STYLES */
-  .contact form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:20px;
-  }
-  
-  .contact form label{
-    display:block;
-  }
-  
-  .contact form p{
-    margin:0;
-  }
-  
-  .contact form .full{
-    grid-column: 1 / 3;
-  }
-  
-  .contact form button, .contact form .four, .contact form textarea{
-    width:100%;
-    padding:1em;
-    border:1px solid #c9e6ff;
-  }
+body {
+  /* background-color: #000000 !important; */
+  width: 100%!important;
+  height: 100%!important;
+  color:white;
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+  background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
+  background: url('../assets/bg-pattern.png'), linear-gradient(to center, #19388b, #3da8e6); 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  #subject {
-  width:206%;
+#header {
+  text-align: center;
+}
+
+.contactMasthead {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  padding: 100px;
+  text-align: center; 
+  color: white;
+  background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
+  background: url('../assets/bg-pattern.png'), linear-gradient(to center, #19388b, #3da8e6);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+
+@media (max-width: 945px){
+  body {
+      width: 100%;
+  }
+}
+
+/* Navbar Scroll */
+.bg-dark {
+  background-color: transparent !important;
+}
+
+.bg-dark.scrolled {
+  background-color: black !important;
+}
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-family: Montserrat-Regular, sans-serif;
+}
+
+/*---------------------------------------------*/
+a {
+	font-family: Montserrat-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #26d1fc;
+}
+
+p {
+	font-family: Montserrat-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+.Container-contact1 {
+  background: transparent;
+}
+
+
+/*---------------------------------------------*/
+*{
+  box-sizing: border-box;
+}
+
+.Container{
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em; 
+} 
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+.brand{
+  text-align: center;
+}
+
+.brand span{
+  color:#fff;
+}
+
+.wrapper{
+  color: white;
+  background-color: black;
+  box-shadow: 5px 7px 4px 4px rgba(177, 220, 240, 0.842);
+}
+
+.wrapper:hover{
+  box-shadow: 7px 9px 6px 7px rgba(177, 220, 240, 0.842);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.company-info{
+  /* background:grey; */
+  background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
+  background: url('../assets/bg-pattern.png'), linear-gradient(to center, #19388b, #3da8e6);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin:0 0 1rem 0;
+}
+
+/* FORM STYLES */
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.contact form label{
+  display:block;
+}
+
+.contact form p{
+  margin:0;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form .four, .contact form textarea{
+  width:100%;
   padding:1em;
   border:1px solid #c9e6ff;
 }
-  
-  .contact form button{
-    background:#c9e6ff;
-    border:0;
-    text-transform: uppercase;
+
+.contact form button{
+  background: linear-gradient(to right,  #31beff, #254dbd);
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background: linear-gradient(to left,  #31beff, #19388b);
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
-  
-  .contact form button:hover,.contact form button:focus{
-    background:#92bde7;
-    color:#fff;
-    outline:0;
-    transition: background-color 2s ease-out;
+
+  .wrapper > *{
+    padding:2em;
   }
-  
-  /* LARGE SCREENS */
-  @media(min-width:700px){
-    .wrapper{
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-    }
-  
-    .wrapper > *{
-      padding:2em;
-    }
-  
-    .company-info h3, .company-info ul, .brand{
-      text-align: left;
-    }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
   }
+}
+
+/* input */
+
+input.input1 {
+height: 50px;
+border-radius: 25px;
+padding: 0 30px;
+}
+input.input1 + .shadow-input1 {
+border-radius: 25px;
+}
+
+textarea.input1 {
+min-height: 150px;
+border-radius: 25px;
+padding: 12px 30px;
+}
+textarea.input1 + .shadow-input1 {
+border-radius: 25px;
+}
+
+.wrap-input1 {
+position: relative;
+width: 100%;
+z-index: 1;
+margin-bottom: 20px;
+}
+
+.input1 {
+display: block;
+width: 100%;
+background: #e6e6e6;
+font-family: Montserrat-Bold;
+font-size: 15px;
+line-height: 1.5;
+color: black;
+}
+
+.shadow-input1 {
+content: '';
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+box-shadow: 0px 2px 0px 0px;
+color: #31beff;
+}
+
+.input1:focus + .shadow-input1 {
+-webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+to {
+  box-shadow: 0px 0px 80px 30px;
+  opacity: 0;
+}
+}
+
+@keyframes anim-shadow {
+to {
+  box-shadow: 0px 0px 80px 30px;
+  opacity: 0;
+}
+}
+

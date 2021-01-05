@@ -32,9 +32,14 @@ body {
     color: #3da8e6;
 }
  
-/* #navMenu {
-    padding-right: 30px !important;
-} */
+/* Navbar menu options */
+#nav-color {
+    color: white;
+    font-weight: bold;
+    font-size: 1.15rem;
+    font-family: 'Nunito', sans-serif!important;
+    padding-left: 30px;
+}
 
 .navbar-brand {
     padding-right: 150px;
@@ -47,6 +52,7 @@ body {
 /* Move NavMenu to the right */
 #navMenu {
     padding-left: 100px!important;
+    font-family: 'Nunito', sans-serif!important;
 }
 
 @media (max-width: 575px){
@@ -82,7 +88,7 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  padding-top: 150px;
+  padding-top: 120px;
   padding-bottom: 50px;
   color: white;
   background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
@@ -192,13 +198,8 @@ body {
 
 }
 
-#nav-color {
-    color: white;
-    font-weight: bold;
-}
-
 #nav-color:hover {
-    color: #3DA8E6;
+    color: #81d1ff;
 }
 
 .top {
@@ -239,7 +240,7 @@ section {
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    /* box-shadow: 7px 7px 30px -5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 7px 7px 30px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 9px 21px 0 rgba(0,2,0,0.2);
     margin-bottom: 2rem;
 }
@@ -301,151 +302,6 @@ p {
 /* service boxes end */
 
 
-/* Footer Stylesheet */
-@media (max-width: 575px){
-footer {
-    text-align: center;
-}}
-
-.ion-icon {
-    color: #3da8e6;
-    font-size: 22px;
-    padding: 20px;
-}
-
-.ion-icon:hover {
-    color: white;
-}
-
-#footerP {
-    color: white;
-    line-height: 25px;
-}
-
-#Hfooter {
-    color: white;
-    font-size: 18px;
-
-}
-
-.footer-top {
-    padding-top: 100px;
-    background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
-    /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    
-}
-
-.segment-one h3 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 3px;
-    margin: 10px 0;
-}
-
-.segment-two h2 {
-    color: #ffffff;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.segment-two h2::before {
-    content: '|';
-    color: #3da8e6;
-    padding-right: 10px;
-}
-
-.segment-two ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.segment-two ul li {
-    line-height: 5px;
-    color: white;
-}
-
-.segment-two ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.segment-three h2 {
-    color: #ffffff;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.segment-three h2::before {
-    content: '|';
-    color: #3da8e6;
-    padding-right: 10px;
-}
-
-@media (max-width: 575px){
-.segment-three {
-    padding-bottom: 30px;
-}}
-
-@media (max-width: 575px){
-.segment-two {
-    padding-bottom: 30px;
-}}
-
-@media (max-width: 575px){
-.segment-four {
-    padding-bottom: 30px;
-}}
-
-@media (min-width: 575px){
-#email {
-    border-radius: 5px;
-    height: 33px;
-    width: 60%;
-    padding: 2px 23px 2px 30px;
-    outline: 0;
-    background-color: #f5f5f5;
-}
-}
-
-#submit:hover {
-    color: #19388b;
-    background-color: white;
-}
-
-@media (min-width: 575px){
-#submit {
-    font-size: 14px;
-}
-}
-
-.segment-four form input[type=submit]{
-    background: transparent;
-    border: solid white;
-    padding: 3px 15px;
-    margin-left: -5px;
-    color: white;
-    text-transform: uppercase;
-}
-
-.footer-bottom-text {
-    padding-top: 20px;
-    text-align: center;
-    color:#19388b ;
-    background-color: #000000;
-    line-height: 75px;
-}
-
-/* .nav-link {
-    padding-left: 120px;
-} */
-
-.nav-item:hover {
-    text-decoration: underline;
-}
 
 /* End of Homepage */
 
@@ -521,14 +377,6 @@ color: #fff;
     width: 50px;
 }
 
-/* #info {
-    background: linear-gradient(to right,  #000000, #19388b);
-    box-shadow: 0 9px 21px 0 rgba(0,2,0,0.2);
-    text-align: center;
-    padding-bottom: 80px;
-    margin-bottom: 20px;
-} */
-
 #infoText {
     color: #fff;
 }
@@ -536,155 +384,3 @@ color: #fff;
 #infoText:hover {
     color: #fff;
 }
-
-/* Subscribe Button */
-:root {
-    --main-color: white;
-    --accent-color: dodgerblue;
-}
-
-/* body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background-color: var(--accent-color);
-} */
-
-body,
-#singular-form button,
-#btnContainer>#singular-form>#input-container>input {
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-#btnContainer {
-    width: 11.4rem;
-    height: 3rem;
-    padding: 10px;
-    background-color: var(--main-color);
-    text-align: center;
-    border-radius: 3rem;
-    overflow: hidden;
-    transition: width .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-
-#btnContainer>#singular-form {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: --main-color;
-}
-
-#btnContainer>#singular-form button {
-    width: 9rem;
-    padding: 0;
-    border: none;
-    outline: none;
-    border-radius: 3rem;
-    cursor: pointer;
-}
-
-#btnContainer>#singular-form>button#trigger {
-    padding: 0;
-    width: 100%;
-    color: var(--accent-color);
-    background-color: transparent;
-    z-index: 3;
-}
-
-#btnContainer>#singular-form>#input-container {
-    z-index: 2;
-}
-
-#btnContainer>#singular-form>#input-container>input {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    background-color: var(--main-color);
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    padding: 0 26% 0 3%;
-    opacity: 0;
-    transform: scale(0);
-    transition: all .4s ease .4s;
-}
-
-#btnContainer>#singular-form>#input-container>button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: var(--accent-color);
-    color: var(--main-color);
-    opacity: 0;
-    transform: scale(0);
-    transition: all .4s ease .4s;
-}
-
-#btnContainer>#singular-form>button#trigger,
-#btnContainer>#singular-form>#input-container,
-#btnContainer>#singular-form>#success {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: scale(0);
-    opacity: 0;
-}
-
-#btnContainer>#singular-form>button#trigger {
-    transition: all .4s ease;
-}
-
-#btnContainer>#singular-form>#input-container {
-    transform: scale(1);
-    opacity: 1;
-    transition: all .4s ease .4s;
-}
-
-#btnContainer>#singular-form>#success {
-    transition: all .2s ease .4s;
-}
-
-#btnContainer>#singular-form>button#trigger.shown,
-#btnContainer>#singular-form>#input-container.shown,
-#btnContainer>#singular-form>#success.shown,
-#btnContainer>#singular-form>#input-container>button.shown,
-#btnContainer>#singular-form>#input-container>input.shown {
-    transform: scale(1);
-    opacity: 1;
-}
-
-/* contact */
-#contactMasthead {
-    position: relative;
-  width: 100%;
-  padding-top: 150px;
-  padding-bottom: 50px;
-  background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
-  background: url('../assets/bg-pattern.png'), linear-gradient(to center, #19388b, #3da8e6);
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#contactTitle {
-    color: white;
-    text-align: center;
-}
-
-#contactMe {
-    font-size: 50px;
-}
-
-#contIcon {
-    font-size: 30px;
-}
-
