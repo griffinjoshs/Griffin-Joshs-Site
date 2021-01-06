@@ -58,12 +58,12 @@ module.exports = function (app) {
           merge_fields: {
             FNAME: req.body.firstName,
             LNAME: req.body.lastName,
-            PHONE: req.body.phone
+            PHONE: req.body.number
           }
         }
       ]
     }
-  
+    console.log(req.body)
 
     const postData = JSON.stringify(data);
 

@@ -8,16 +8,15 @@ require('dotenv').config();
 const PORT = process.env.PORT || 9999;
 const app = express();
 
-
-// View engine setup
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
-
 // Serve static content for the app from the "public" directory in the application directory.
 // (html allower)
 app.use(express.static("public"));
 // Static folder (handlebars allower)
 app.use('/public', express.static(path.join(__dirname + '/public')));
+
+// View engine setup
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
 
 // Parse application body as JSON
 // Body Parser Middleware
