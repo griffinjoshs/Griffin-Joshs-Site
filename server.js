@@ -11,8 +11,9 @@ const app = express();
 // Serve static content for the app from the "public" directory in the application directory.
 // (html allower)
 app.use(express.static("public"));
-// Static folder (handlebars allower)
-app.use('/public', express.static(path.join(__dirname + '/public')));
+
+// // Static folder (handlebars allower)
+// app.use('/public', express.static(path.join(__dirname + '/public')));
 
 // View engine setup
 app.engine('handlebars', exphbs());
