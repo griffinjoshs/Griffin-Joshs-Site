@@ -9,98 +9,22 @@ body {
     }
 }
 
- /* Navbar Scroll */
- .bg-dark {
-    background-color: transparent !important;
-}
-
-.bg-dark.scrolled {
-    background-color: black !important;
-}
-
-/* Hamburger background-color change on click */
-.navbar-dark .navbar-toggler:active {
-    background: #3da8e6;
-    ;
-}
-
-.navbar-toggle.collapsed {
-    background-color: #3da8e6 !important;
-}
-
-.navbar-dark:hover {
-    color: #3da8e6;
-}
- 
-/* Navbar menu options */
-#nav-color {
-    color: white;
-    font-weight: bold;
-    font-size: 1.15rem;
-    font-family: 'Nunito', sans-serif!important;
-    padding-left: 30px;
-}
-
-.navbar-brand {
-    padding-right: 150px;
-}
-
-.nav-item {
-    padding: 12px;
-}
-
-/* Move NavMenu to the right */
-#navMenu {
-    padding-left: 100px!important;
-    font-family: 'Nunito', sans-serif!important;
-}
-
-@media (max-width: 575px){
-    #navbarMenu {
-        background-color: black;
-    }
-}
-
-.navbar {
-    padding-left: 70px!important;
-}
-
-@media (max-width: 575px){
-.navbar {
-    padding-left: 10px!important;
-}
-.navMenu {
-    padding-left: 100px!important;
-}
-}
-
-.ion-icon {
-    color: #3da8e6;
-    font-size: 22px;
-    padding: 20px;
-}
-
-.ion-icon:hover {
-    color: #ffffff;
-    font-size: 25px;
-}
-
 .masthead {
-  position: relative;
-  width: 100%;
-  padding-top: 120px;
-  padding-bottom: 50px;
-  color: white;
-  background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
-  background: url('../assets/bg-pattern.png'), linear-gradient(to center, #19388b, #3da8e6);
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    position: relative;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 65px;
+    color: white;
+    background: url('../images/grunge.png'), linear-gradient(to right,  #000000, #19388b);
+    background: url('../assets/bg-pattern.png'), linear-gradient(to center, #19388b, #3da8e6);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-@media (max-width: 575px){
+  @media (max-width: 945px){
     .top {
         text-align: center;
         padding-bottom: 60px;
@@ -111,11 +35,29 @@ body {
     padding-bottom: 0px;
 }
 
-@media (max-width: 575px){
-    .phone-2 {
-    width: 270px;
-    height: 550px;
+@media (max-width: 945px){  
+.masthead { 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 300px;
+    position: relative;
+}  
+.phone-2 {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 0px;
+    width: 100%;
+    position: absolute;
     }
+/* #col4 {
+    padding-top: 5px;
+} */
+
+#service {
+    padding-bottom: 50px!important;
+    position: relative
+}
 }
 
     /* Cool Buttons */
@@ -214,9 +156,9 @@ h1 {
     padding-bottom: 40px;
 }
 
-p {
+/* p {
     font-family: 'Open Sans', sans-serif;
-}
+} */
 
 /* service boxes */
 #merch {
@@ -228,9 +170,11 @@ p {
     padding-top: 30px;
 }
 
-section {
-    padding-top: 4rem;
+#service {
+    padding-top: 5rem;
     padding-bottom: 5rem;
+}
+section {
     background-color: #f1f4fa;
 }
 

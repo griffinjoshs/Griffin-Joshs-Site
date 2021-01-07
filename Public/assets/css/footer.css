@@ -1,7 +1,14 @@
-@media (max-width: 575px){
+
+
+@media (max-width: 945px){  
     footer {
-        text-align: center;
-    }}
+        text-align: center
+    }
+    #footerP {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
     
     .ion-icon {
         color: #3da8e6;
@@ -124,7 +131,7 @@
         line-height: 75px;
     }
     
-    .nav-item:hover {
-        text-decoration: underline;
+    .nav-link:hover {
+        color: #3da8e6;
     }
     
