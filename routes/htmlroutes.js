@@ -16,12 +16,17 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../Public/index.html"));
     });
 
-    // CREATE USER HTML
+    // CREATE Shop HTML
     app.get("/shop", function (req, res) {
         res.sendFile(path.join(__dirname, "../Public/shop.html"));
     });
 
-    app.get('/contact', (req, res) => {
-        res.render('contact', {layout: false});
+    // CREATE Contact HTML
+    app.get("/contact", function (req, res) {
+        res.sendFile(path.join(__dirname, "../Public/contact.html"));
     });
+
+    // app.get('/contact', (req, res) => {
+    //     res.render('contact', {layout: false});
+    // });
 };

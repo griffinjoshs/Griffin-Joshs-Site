@@ -1,8 +1,7 @@
-/* Navbar Scroll */
 .bg-dark {
     background-color: transparent !important;
 }
-
+/* Navbar Scroll */
 .bg-dark.scrolled {
     background-color: black !important;
 }

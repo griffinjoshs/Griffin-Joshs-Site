@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const exphbs = require('express-handlebars');
 const path = require("path");
 
 require('dotenv').config();
@@ -10,24 +9,7 @@ const app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
 // (html allower)
-app.use(express.static("public"));
-
-function optionHeader() {
-  return{
-    setHeaders: function (res, path, stat){
-      var extensions = path.split('.');
-      res.set('Content-Type', 'text/' + extensions[extensions.length -1]);
-    }
-  }
-}
-app.use(express.static(__dirname + "/assets" + optionHeader()));
-
-// // Static folder (handlebars allower)
-app.use('/public', express.static(path.join(__dirname + '/public')));
-
-// View engine setup
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
+app.use(express.static(__dirname + '/public'));
 
 // Parse application body as JSON
 // Body Parser Middleware
