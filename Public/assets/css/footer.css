@@ -135,3 +135,76 @@
         color: #3da8e6;
     }
     
+    /* sub button */
+    #subInput {
+        height: 45px;
+        border-radius: 5px;
+        padding: 0 15px;
+        background: rgba(255, 255, 255, 0.267);;
+        font-family: Montserrat-Bold;
+        font-size: 14px;
+        line-height: 1.5;
+        border: none;
+        color: white;
+        /* padding-right: 90px; */
+        width: 240px;
+        }
+    
+        /* #subInput[type=text] {
+         } */
+    
+        /* @media (max-width: 945px){
+            #subInput {
+                margin-left: 30px;
+            }
+        } */
+    
+        
+        #subInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: rgb(255, 255, 255);
+          opacity: 1; /* Firefox */
+        }
+        
+        #subInput:hover {
+          background: rgba(255, 255, 255, 0.178);
+          font-family: Montserrat-Bold;
+          line-height: 1.5;
+          color: white;
+          }
+    
+          #submitSub {
+              height: 45px;
+              width: 100px;
+              background-color: #3da8e6;
+              border-radius: 5px;
+              border: transparent;
+            color: white;
+            position: absolute;
+            }
+    
+            #submitSub:hover {
+                background-color: transparent;
+                border: solid #3da8e6;
+              }
+    
+              .btnContainer {
+                width: 20rem;
+                /* padding-right: 50px; */
+                background-color: var(--main-color);
+                text-align: center;
+                /* border-radius: 3rem; */
+                overflow: hidden;
+                display: flex;
+                transition: width .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+              }
+    
+              #subForm {
+                display: flex;
+              }
+    
+              .space {
+                padding-left: 50px;
+              }
