@@ -12,7 +12,15 @@ const app = express();
 // (html allower)
 app.use(express.static("public"));
 
-app.use(express.static(__dirname + "public"));
+function optionHeader() {
+  return{
+    setHeaders: function (res, path, stat){
+      var extensions = path.split('.');
+      res.set('Content-Type', 'text/' + extensions[extensions.length -1]);
+    }
+  }
+}
+app.use(express.static(__dirname + "/assets" + optionHeader()));
 
 // // Static folder (handlebars allower)
 app.use('/public', express.static(path.join(__dirname + '/public')));
