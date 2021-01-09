@@ -12,8 +12,10 @@ const app = express();
 // (html allower)
 app.use(express.static("public"));
 
+app.use(express.static(__dirname + "public"));
+
 // // Static folder (handlebars allower)
-app.use(express.static(__dirname + '/public'));
+app.use('/public', express.static(path.join(__dirname + '/public')));
 
 // View engine setup
 app.engine('handlebars', exphbs());
