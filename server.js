@@ -10,7 +10,7 @@ const app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
 // (html allower)
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/Public'));
 
 // Parse application body as JSON
 // Body Parser Middleware
