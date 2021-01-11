@@ -54,11 +54,24 @@ body {
     }
     }
     
-    @media (max-width: 363px){
+    @media (max-width: 800px){
             .masthead {
                 padding-bottom: 0px!important;
             }
+            .display-4 {
+                text-align: center;
+              }
+        
+              p {
+                text-align: center;
+              }
+              #buttons {
+                  padding-left: 30px;
+                  justify-content: center;
+              }
       }
+
+     
 
 .masthead {
     position: relative;
