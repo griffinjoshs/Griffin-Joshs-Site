@@ -7,6 +7,9 @@ body {
     body {
         width: 100%;
     }
+    .phone-2 {
+        padding-top: 20px;
+    }
 }
 
 .masthead {
@@ -29,17 +32,23 @@ body {
         text-align: center;
         padding-bottom: 60px;
     }
+  }
+
+  @media (max-width: 992px){
+    #top {
+        padding-top: 60px!important;
+    }
 }
 
 .phone-2 {
     padding-bottom: 0px;
 }
 
-@media (max-width: 945px){  
+@media (max-width: 768px){  
 .masthead { 
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 300px;
     position: relative;
 }  
@@ -59,6 +68,16 @@ body {
     position: relative
 }
 }
+
+@media (max-width: 542px){
+    .phone-2 {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 0px;
+        width: 100%;
+        position: absolute;
+        }
+  }
 
     /* Cool Buttons */
     .btn {
@@ -147,6 +166,12 @@ body {
 .top {
     padding-top: 70px;
 }
+
+/* @media (max-width: 768px){  
+    .top { 
+    padding-top: 0px!important;
+} 
+} */
 
 h1 {
     font-family: 'Montserrat', sans-serif;
