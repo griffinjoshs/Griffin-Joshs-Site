@@ -47,11 +47,12 @@ body {
     
     @media (max-width: 363px){
         .phone-2 {
-            padding-left: 32px;
+            /* padding-left: 32px;
             padding-right: 32px;
             padding-bottom: 0px;
             width: 100%;
-            position: absolute;
+            position: absolute; */
+            display: none;
             }
             .masthead {
                 padding-bottom: 0px!important;
