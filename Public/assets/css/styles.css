@@ -27,19 +27,6 @@ body {
     background-size: cover;
   }
 
-  @media (max-width: 945px){
-    .top {
-        text-align: center;
-        padding-bottom: 60px;
-    }
-  }
-
-  @media (max-width: 992px){
-    #top {
-        padding-top: 60px!important;
-    }
-}
-
 .phone-2 {
     padding-bottom: 0px;
 }
@@ -163,9 +150,9 @@ body {
     color: #81d1ff;
 }
 
-.top {
+/* .top {
     padding-top: 70px;
-}
+} */
 
 /* @media (max-width: 768px){  
     .top { 
